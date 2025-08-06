@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malla Curricular Interactiva - Arquitectura</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Malla Curricular - Arquitectura</h1>
+<div id="malla">
+
+    <!-- PRIMER AÑO -->
+    <div class="ciclo">
+        <h2>Ciclo I</h2>
+        <div class="ramo" data-id="desarrollo" data-req="">Desarrollo Personal Social</div>
+        <div class="ramo" data-id="leng1" data-req="">Lenguaje Comunicación 1</div>
+        <div class="ramo" data-id="mat" data-req="">Matemática para Arquitectura</div>
+        <div class="ramo" data-id="proj1" data-req="">Proyecto de Arquitectura 1</div>
+        <div class="ramo" data-id="dib1" data-req="">Dibujo 1</div>
+        <div class="ramo" data-id="etica" data-req="">Ética Cívica</div>
+    </div>
+
+    <div class="ciclo">
+        <h2>Ciclo II</h2>
+        <div class="ramo" data-id="eco" data-req="">Economía y Empresa</div>
+        <div class="ramo bloqueado" data-id="leng2" data-req="leng1">Lenguaje y Comunicación 2</div>
+        <div class="ramo" data-id="procSoc" data-req="">Procesos Sociales y Políticos</div>
+        <div class="ramo" data-id="filo" data-req="">Temas de Filosofía</div>
+        <div class="ramo bloqueado" data-id="proj2" data-req="proj1">Proyecto de Arquitectura 2</div>
+        <div class="ramo bloqueado" data-id="dib2" data-req="dib1">Dibujo 2</div>
+    </div>
+
+    <!-- SEGUNDO AÑO -->
+    <div class="ciclo">
+        <h2>Ciclo III</h2>
+        <div class="ramo bloqueado" data-id="proj3" data-req="proj2">Proyecto de Arquitectura 3</div>
+        <div class="ramo bloqueado" data-id="dib3" data-req="dib2">Dibujo 3</div>
+        <div class="ramo bloqueado" data-id="histArte" data-req="leng2">Historia del Arte</div>
+        <div class="ramo bloqueado" data-id="estad" data-req="eco">Estadística</div>
+        <div class="ramo" data-id="const1" data-req="">Construcción 1</div>
+        <div class="ramo bloqueado" data-id="fisica" data-req="mat">Física</div>
+    </div>
+
+    <div class="ciclo">
+        <h2>Ciclo IV</h2>
+        <div class="ramo bloqueado" data-id="proj4" data-req="proj3">Proyecto de Arquitectura 4</div>
+        <div class="ramo bloqueado" data-id="grafica" data-req="dib3">Gráfica Digital</div>
+        <div class="ramo bloqueado" data-id="histTeo1" data-req="histArte">Historia y Teoría de la Arquitectura 1</div>
+        <div class="ramo bloqueado" data-id="medioAmb" data-req="procSoc">Medio Ambiente y Recursos Naturales</div>
+        <div class="ramo bloqueado" data-id="const2" data-req="const1">Construcción 2</div>
+        <div class="ramo bloqueado" data-id="orientEstruct" data-req="fisica">Orientación Estructural</div>
+    </div>
+
+    <!-- TERCER AÑO -->
+    <div class="ciclo">
+        <h2>Ciclo V</h2>
+        <div class="ramo bloqueado" data-id="proj5" data-req="proj4">Proyecto de Arquitectura 5</div>
+        <div class="ramo bloqueado" data-id="dibPresent" data-req="grafica">Dibujo y Presentación de Proyecto</div>
+        <div class="ramo bloqueado" data-id="histTeo2" data-req="histTeo1">Historia y Teoría de la Arquitectura 2</div>
+        <div class="ramo bloqueado" data-id="acond1" data-req="medioAmb">Acondicionamiento Ambiental 1</div>
+        <div class="ramo bloqueado" data-id="inst1" data-req="const2">Instalaciones 1</div>
+        <div class="ramo bloqueado" data-id="estruct1" data-req="orientEstruct">Estructura I</div>
+    </div>
+
+    <div class="ciclo">
+        <h2>Ciclo VI</h2>
+        <div class="ramo bloqueado" data-id="proj6" data-req="proj5,orientEstruct">Proyecto de Arquitectura 6</div>
+        <div class="ramo bloqueado" data-id="urb1" data-req="medioAmb,histTeo2">Urbanismo 1</div>
+        <div class="ramo bloqueado" data-id="histTeo3" data-req="histTeo2">Historia y Teoría de la Arquitectura 3</div>
+        <div class="ramo bloqueado" data-id="acond2" data-req="acond1">Acondicionamiento Ambiental 2</div>
+        <div class="ramo bloqueado" data-id="inst2" data-req="inst1,dibPresent">Instalaciones 2</div>
+        <div class="ramo bloqueado" data-id="estruct2" data-req="estruct1">Estructuras 2</div>
+    </div>
+
+    <!-- CUARTO AÑO -->
+    <div class="ciclo">
+        <h2>Ciclo VII</h2>
+        <div class="ramo bloqueado" data-id="proj7" data-req="proj6">Proyecto de Arquitectura Nivel 7</div>
+        <div class="ramo bloqueado" data-id="urb2" data-req="urb1">Urbanismo 2</div>
+        <div class="ramo bloqueado" data-id="histPeru" data-req="histTeo3">Historia de la Arquitectura Peruana</div>
+        <div class="ramo bloqueado" data-id="gest1" data-req="estad">Gestión de Proyectos 1</div>
+        <div class="ramo bloqueado" data-id="metrados" data-req="inst2,estruct2">Metrados, Presupuestos y Programación de Obra</div>
+        <div class="ramo bloqueado" data-id="estruct3" data-req="estruct2">Estructura 3</div>
+    </div>
+
+    <div class="ciclo">
+        <h2>Ciclo VIII</h2>
+        <div class="ramo bloqueado" data-id="proj8" data-req="proj7,urb2">Proyecto de Arquitectura Nivel 8</div>
+        <div class="ramo bloqueado" data-id="desProy" data-req="inst2,estruct3">Desarrollo de Proyectos</div>
+        <div class="ramo bloqueado" data-id="gest2" data-req="gest1,metrados">Gestión de Proyectos 2</div>
+    </div>
+
+    <!-- QUINTO AÑO -->
+    <div class="ciclo">
+        <h2>Ciclo IX</h2>
+        <div class="ramo bloqueado" data-id="proj9" data-req="histPeru,proj8">Proyecto de Arquitectura Nivel 9</div>
+        <div class="ramo bloqueado" data-id="gest3" data-req="gest2,desProy">Gestión de Proyectos 3</div>
+    </div>
+
+    <div class="ciclo">
+        <h2>Ciclo X</h2>
+        <div class="ramo bloqueado" data-id="finCarrera" data-req="proj9">Proyecto de Fin de Carrera</div>
+        <div class="ramo bloqueado" data-id="gest4" data-req="gest3">Gestión de Proyectos 4</div>
+        <div class="ramo bloqueado" data-id="seminArq" data-req="histPeru">Seminario de Investigación en Arquitectura</div>
+        <div class="ramo bloqueado" data-id="foto" data-req="grafica">Fotografía</div>
+        <div class="ramo bloqueado" data-id="apuntes" data-req="grafica">Apuntes</div>
+        <div class="ramo bloqueado" data-id="cadAvanz" data-req="dibPresent">CAD avanzado</div>
+        <div class="ramo bloqueado" data-id="interiores" data-req="inst2">Arquitectura de interiores</div>
+        <div class="ramo bloqueado" data-id="paisajismo" data-req="acond2">Arquitectura Paisajista</div>
+        <div class="ramo bloqueado" data-id="patrimonio" data-req="histPeru">Conservación de Patrimonio</div>
+        <div class="ramo bloqueado" data-id="fabricacion" data-req="dibPresent">Diseño y Fabricación Digital</div>
+        <div class="ramo bloqueado" data-id="acabados" data-req="desProy">Acabados de Construcción</div>
+        <div class="ramo bloqueado" data-id="vivienda" data-req="urb2">Diseño de la Vivienda</div>
+        <div class="ramo bloqueado" data-id="analisisUrbano" data-req="urb2">Análisis Regional y Urbano</div>
+        <div class="ramo bloqueado" data-id="acustica" data-req="acond2">Acústica</div>
+        <div class="ramo bloqueado" data-id="centrosHistoricos" data-req="histPeru">Conservación de Centros Históricos</div>
+        <div class="ramo bloqueado" data-id="topografia" data-req="desProy">Topografía y Mecánica de Suelo</div>
+        <div class="ramo bloqueado" data-id="luminico" data-req="acond2">Diseño Lumínico y Arquitectónico</div>
+        <div class="ramo bloqueado" data-id="seminConstruccion" data-req="metrados,desProy">Seminario de Construcción</div>
+        <div class="ramo bloqueado" data-id="seminUrbanismo" data-req="urb2,acond2">Seminario de Urbanismo</div>
+    </div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
