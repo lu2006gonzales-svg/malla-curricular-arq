@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malla Curricular Interactiva - Arquitectura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Malla Curricular - Arquitectura</h1>
+
+<div class="grid-container">
+
+    <!-- PRIMER AÑO -->
+    <!-- CICLO I -->
+    <div class="cycle">
+        <h2>Ciclo I</h2>
+        <div class="course" id="desarrollo" data-prerequisite="">Desarrollo Personal Social</div>
+        <div class="course" id="lenguaje1" data-prerequisite="">Lenguaje Comunicación 1</div>
+        <div class="course" id="matematica" data-prerequisite="">Matemática para Arquitectura</div>
+        <div class="course" id="proy1" data-prerequisite="">Proyecto de Arquitectura 1</div>
+        <div class="course" id="dibujo1" data-prerequisite="">Dibujo 1</div>
+        <div class="course" id="etica" data-prerequisite="">Ética Cívica</div>
+    </div>
+
+    <!-- CICLO II -->
+    <div class="cycle">
+        <h2>Ciclo II</h2>
+        <div class="course" id="economia" data-prerequisite="">Economía y Empresa</div>
+        <div class="course" id="lenguaje2" data-prerequisite="lenguaje1">Lenguaje y Comunicación 2</div>
+        <div class="course" id="procesos" data-prerequisite="">Procesos Sociales y Políticos</div>
+        <div class="course" id="filosofia" data-prerequisite="">Temas de Filosofía</div>
+        <div class="course" id="proy2" data-prerequisite="proy1">Proyecto de Arquitectura 2</div>
+        <div class="course" id="dibujo2" data-prerequisite="dibujo1">Dibujo 2</div>
+    </div>
+
+    <!-- SEGUNDO AÑO -->
+    <!-- CICLO III -->
+    <div class="cycle">
+        <h2>Ciclo III</h2>
+        <div class="course" id="proy3" data-prerequisite="proy2">Proyecto de Arquitectura 3</div>
+        <div class="course" id="dibujo3" data-prerequisite="dibujo2">Dibujo 3</div>
+        <div class="course" id="historiaarte" data-prerequisite="lenguaje2">Historia del Arte</div>
+        <div class="course" id="estadistica" data-prerequisite="economia">Estadística</div>
+        <div class="course" id="construccion1" data-prerequisite="">Construcción 1</div>
+        <div class="course" id="fisica" data-prerequisite="matematica">Física</div>
+    </div>
+
+    <!-- CICLO IV -->
+    <div class="cycle">
+        <h2>Ciclo IV</h2>
+        <div class="course" id="proy4" data-prerequisite="proy3">Proyecto de Arquitectura 4</div>
+        <div class="course" id="graficadigital" data-prerequisite="dibujo3">Gráfica Digital</div>
+        <div class="course" id="historia1" data-prerequisite="historiaarte">Historia y Teoría de la Arquitectura 1</div>
+        <div class="course" id="medioambiente" data-prerequisite="procesos">Medio Ambiente y Recursos Naturales</div>
+        <div class="course" id="construccion2" data-prerequisite="construccion1">Construcción 2</div>
+        <div class="course" id="orientacionestructural" data-prerequisite="fisica">Orientación Estructural</div>
+    </div>
+
+    <!-- TERCER AÑO -->
+    <!-- CICLO V -->
+    <div class="cycle">
+        <h2>Ciclo V</h2>
+        <div class="course" id="proy5" data-prerequisite="proy4">Proyecto de Arquitectura 5</div>
+        <div class="course" id="dibujopresentacion" data-prerequisite="graficadigital">Dibujo y Presentación de Proyecto</div>
+        <div class="course" id="historia2" data-prerequisite="historia1">Historia y Teoría de la Arquitectura 2</div>
+        <div class="course" id="acond1" data-prerequisite="medioambiente">Acondicionamiento Ambiental 1</div>
+        <div class="course" id="instalaciones1" data-prerequisite="construccion2">Instalaciones 1</div>
+        <div class="course" id="estructuras1" data-prerequisite="orientacionestructural,construccion1">Estructura I</div>
+    </div>
+
+    <!-- CICLO VI -->
+    <div class="cycle">
+        <h2>Ciclo VI</h2>
+        <div class="course" id="proy6" data-prerequisite="proy5,orientacionestructural">Proyecto de Arquitectura 6</div>
+        <div class="course" id="urbanismo1" data-prerequisite="medioambiente,historia2">Urbanismo 1</div>
+        <div class="course" id="historia3" data-prerequisite="historia2">Historia y Teoría de la Arquitectura 3</div>
+        <div class="course" id="acond2" data-prerequisite="acond1">Acondicionamiento Ambiental 2</div>
+        <div class="course" id="instalaciones2" data-prerequisite="instalaciones1,dibujopresentacion">Instalaciones 2</div>
+        <div class="course" id="estructuras2" data-prerequisite="estructuras1">Estructuras 2</div>
+    </div>
+
+    <!-- CUARTO AÑO -->
+    <!-- CICLO VII -->
+    <div class="cycle">
+        <h2>Ciclo VII</h2>
+        <div class="course" id="proy7" data-prerequisite="proy6">Proyecto de Arquitectura 7</div>
+        <div class="course" id="urbanismo2" data-prerequisite="urbanismo1">Urbanismo 2</div>
+        <div class="course" id="historiaperuana" data-prerequisite="historia3">Historia de la Arquitectura Peruana</div>
+        <div class="course" id="gestion1" data-prerequisite="estadistica">Gestión de Proyectos 1</div>
+        <div class="course" id="metrados" data-prerequisite="instalaciones2,estructuras2">Metrados, Presupuestos y Programación de Obra</div>
+        <div class="course" id="estructuras3" data-prerequisite="estructuras2">Estructura 3</div>
+    </div>
+
+    <!-- CICLO VIII -->
+    <div class="cycle">
+        <h2>Ciclo VIII</h2>
+        <div class="course" id="proy8" data-prerequisite="proy7,urbanismo2">Proyecto de Arquitectura 8</div>
+        <div class="course" id="desarrolloproy" data-prerequisite="instalaciones2,estructuras3">Desarrollo de Proyectos</div>
+        <div class="course" id="gestion2" data-prerequisite="gestion1,metrados">Gestión de Proyectos 2</div>
+    </div>
+
+    <!-- QUINTO AÑO -->
+    <!-- CICLO IX -->
+    <div class="cycle">
+        <h2>Ciclo IX</h2>
+        <div class="course" id="proy9" data-prerequisite="historiaperuana,proy8">Proyecto de Arquitectura 9</div>
+        <div class="course" id="gestion3" data-prerequisite="gestion2,desarrolloproy">Gestión de Proyectos 3</div>
+    </div>
+
+    <!-- CICLO X -->
+    <div class="cycle">
+        <h2>Ciclo X</h2>
+        <div class="course" id="proyfin" data-prerequisite="proy9">Proyecto de Fin de Carrera</div>
+        <div class="course" id="gestion4" data-prerequisite="gestion3">Gestión de Proyectos 4</div>
+        <div class="course" id="seminarioinv" data-prerequisite="historiaperuana">Seminario de Investigación en Arquitectura</div>
+        <div class="course" id="fotografia" data-prerequisite="graficadigital">Fotografía</div>
+        <div class="course" id="apuntes" data-prerequisite="graficadigital">Apuntes</div>
+        <div class="course" id="cad" data-prerequisite="dibujopresentacion">CAD Avanzado</div>
+        <div class="course" id="interiores" data-prerequisite="instalaciones2">Arquitectura de Interiores</div>
+        <div class="course" id="paisajista" data-prerequisite="acond2">Arquitectura Paisajista</div>
+        <div class="course" id="patrimonio" data-prerequisite="historiaperuana">Conservación de Patrimonio</div>
+        <div class="course" id="fabricacion" data-prerequisite="dibujopresentacion">Diseño y Fabricación Digital</div>
+        <div class="course" id="acabados" data-prerequisite="desarrolloproy">Acabados de Construcción</div>
+        <div class="course" id="vivienda" data-prerequisite="urbanismo2">Diseño de la Vivienda</div>
+        <div class="course" id="analisisurbano" data-prerequisite="urbanismo2">Análisis Regional y Urbano</div>
+        <div class="course" id="acustica" data-prerequisite="acond2">Acústica</div>
+        <div class="course" id="centroshistoricos" data-prerequisite="historiaperuana">Conservación de Centros Históricos</div>
+        <div class="course" id="topografia" data-prerequisite="desarrolloproy">Topografía y Mecánica de Suelo</div>
+        <div class="course" id="disenolum" data-prerequisite="acond2">Diseño Lumínico y Arquitectónico</div>
+        <div class="course" id="seminarioconstruccion" data-prerequisite="metrados,desarrolloproy">Seminario de Construcción</div>
+        <div class="course" id="seminariourbanismo" data-prerequisite="urbanismo1,acond2">Seminario de Urbanismo</div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
